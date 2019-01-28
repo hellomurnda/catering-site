@@ -1,0 +1,9 @@
+.page-section {
+	padding: 7.8125rem 0;
+	
+	&--our-services {
+		background-image: url('../../images/services-bg.jpg');
+		background-size: cover;
+	}
+}
+

@@ -1,0 +1,19 @@
+.btn {
+	background-color: $carrotOrange;
+	color: #fff;
+	text-decoration: none;
+	font-size: .9rem;
+	padding: 1rem 2.125rem;
+	transition: background-color .5s ease-out;
+	display: inline-block;
+	
+	@mixin atMedium {
+		font-size: 1.375rem;
+	}
+	
+	&:hover {
+		background-color: $darkOrange;
+		
+	}
+}
+
