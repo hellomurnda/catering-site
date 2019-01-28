@@ -1,4 +1,55 @@
 .service {
+	background-color: #fff;
+	box-shadow: -5px 0 7px rgba(0, 0, 0, .3);
+	max-width: 30.3125rem;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 4rem;
 	
+	@mixin atMedium {
+		margin-bottom: 0;
+	}
+	
+	&--no-b-margin {
+		margin-bottom: 0;
+	}
+	
+	&__photo {
+		border: solid transparent;
+		border-width: 0 0 5px;
+		border-image: linear-gradient(to right, $flaxYellow 25%, $guacGreen 25%, $guacGreen 50%, $chiliRed 50%, $chiliRed 75%, $blueGray 75%) 4;
+	}
+	
+	&__image {
+		display: block;
+	}
+	
+	&__text-content {
+		padding-left: 1.875rem;
+		padding-right: 1.875rem;
+	}
+	
+	&__title {
+		font-family: mrs-eaves-xl-serif-narrow, serif;
+		font-size: 1.75rem;
+		font-weight: 700;
+		color: $darkBlue;
+		margin-top: 1rem;
+		padding-bottom: 0;
+		margin-bottom: 0;
+		
+		@mixin atMedium
+			font-size: 2.5625rem;
+		}
+	
+	&__description {
+		padding: 0;
+		max-width: 20.75rem;
+		line-height: 2;
+		
+		@mixin atMedium {
+			max-width: 20.75rem;
+		}
+	}
 }
 

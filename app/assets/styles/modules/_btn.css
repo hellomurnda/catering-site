@@ -3,17 +3,23 @@
 	color: #fff;
 	text-decoration: none;
 	font-size: .9rem;
-	padding: 1rem 2.125rem;
+	padding: 1.2rem 2.125rem;
 	transition: background-color .5s ease-out;
 	display: inline-block;
 	
 	@mixin atMedium {
-		font-size: 1.375rem;
+		font-size: 1.3125rem;
 	}
 	
 	&:hover {
 		background-color: $darkOrange;
 		
+	}
+	
+	&--service {
+		width: 100%;
+		text-align: center;
+		margin-top: 10px;
 	}
 }
 
