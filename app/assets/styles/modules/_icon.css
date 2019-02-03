@@ -1,0 +1,10 @@
+.icon {
+	text-align: center;
+	margin: 35px;
+	transform: scale(.65);
+	
+	@mixin atSmall {
+		transform: scale(.80);
+	}
+}
+

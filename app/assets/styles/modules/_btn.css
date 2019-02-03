@@ -13,13 +13,21 @@
 	
 	&:hover {
 		background-color: $darkOrange;
-		
 	}
 	
 	&--service {
 		width: 100%;
 		text-align: center;
 		margin-top: 10px;
+	}
+	
+	&--t-margin {
+		margin-top: .5rem;
+		margin-bottom: .5rem;
+		
+		@mixin atMedium {
+			margin-top: 1.5rem;	
+		}
 	}
 }
 
