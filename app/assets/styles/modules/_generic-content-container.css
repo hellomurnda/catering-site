@@ -1,0 +1,43 @@
+.generic-content-container {
+	p {
+		line-height: 2;
+		
+		@mixin atSmall {
+			font-size: 1.125rem;
+		}
+		
+		@mixin atMedium {
+			
+		}
+		
+		@mixin atMediumLarge {
+			max-width: 42.625rem;
+		}
+	}
+	
+	p a {
+		text-decoration: none;
+		color: $carrotOrange;
+	}
+	
+		&--center-at-medium p {
+			
+			@mixin atMedium {
+				margin-left: auto;
+				margin-right: auto;
+				max-width: 60rem;
+				text-align: center;
+				padding-bottom: 2.5rem;
+				border-bottom: 2px solid #fff;
+			}
+			
+			@mixin atLarge {
+				border-bottom: none;
+				margin-left: 0;
+				margin-right: 0;
+				text-align: left;
+				margin-bottom: 0;
+				padding-bottom: 0;
+			}
+		}
+}
