@@ -545,7 +545,7 @@ img {
 
 .service__photo {
 		border: solid transparent;
-		border-width: 0 0 5px 0;
+		border-width: 0 0 5px;
 		-o-border-image: linear-gradient(to right, #e3c773 25%, #9cbc65 25%, #9cbc65 50%, #bd2826 50%, #bd2826 75%, #8594aa 75%) 4;
 		   border-image: linear-gradient(to right, #e3c773 25%, #9cbc65 25%, #9cbc65 50%, #bd2826 50%, #bd2826 75%, #8594aa 75%) 4;
 	}
