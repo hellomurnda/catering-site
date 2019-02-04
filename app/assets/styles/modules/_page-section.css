@@ -9,8 +9,8 @@
 		padding: 7.8125rem 0;
 	}
 	
-	&--our-services {
-		background: url('/assets/images/services-bg.jpg') top center no-repeat;
+	&--vegetables {
+		background: url('/assets/images/vegetable-pattern-bg.jpg') top center no-repeat;
 		background-size: cover;
 	}
 	
