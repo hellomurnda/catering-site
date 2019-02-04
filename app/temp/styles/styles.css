@@ -971,3 +971,17 @@ img {
 .google-map iframe {
 		width: 100%;
 	}
+
+.footer {
+	background-color: #8594aa;
+	text-align: center;
+	color: #fff;
+	margin: 0;
+	padding: 1rem 18px;
+	line-height: 1.5;
+}
+
+.footer a {
+		color: #413f4c;
+		text-decoration: none;
+	}
