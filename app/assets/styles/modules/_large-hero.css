@@ -6,17 +6,22 @@
 	}
 	
 	&__text-content {
-		padding-top: 80px;
+		padding-top: 120px;
 		position: absolute;
 		top: 28%;
 		transform: translateY(-50%);
 		left: 0;
 		width: 100%;
 		text-align: center;
+		padding-left: 18px;
+		padding-right: 18px;
 		
 		@mixin atSmall {
 			text-align: left;
-			padding-left: 10%;
+		}
+		
+		@mixin atLarge {
+			padding-left: 9.166667%;
 		}
 	}
 	
