@@ -1,6 +1,7 @@
 .generic-content-container {
 	p {
 		line-height: 2;
+		margin-top: .5rem;
 		
 		@mixin atSmall {
 			font-size: 1.125rem;
@@ -20,24 +21,36 @@
 		color: $carrotOrange;
 	}
 	
-		&--center-at-medium p {
-			
-			@mixin atMedium {
-				margin-left: auto;
-				margin-right: auto;
-				max-width: 60rem;
-				text-align: center;
-				padding-bottom: 2.5rem;
-				border-bottom: 2px solid #fff;
-			}
-			
-			@mixin atLarge {
-				border-bottom: none;
-				margin-left: 0;
-				margin-right: 0;
-				text-align: left;
-				margin-bottom: 0;
-				padding-bottom: 0;
-			}
+	&--p-white p {
+		color: #fff;
+	}
+	
+	&--p-white p a {
+		color: $darkBlue;
+	}
+	
+	&--a-white p a {
+		text-decoration: none;
+		color: #fff;
+	}
+	
+	&--center-at-medium p {
+
+		@mixin atMedium {
+			margin-left: auto;
+			margin-right: auto;
+			max-width: 60rem;
+			text-align: center;
+			padding-bottom: 2.5rem;
 		}
+
+		@mixin atLarge {
+			border-bottom: none;
+			margin-left: 0;
+			margin-right: 0;
+			text-align: left;
+			margin-bottom: 0;
+			padding-bottom: 0;
+		}
+	}
 }

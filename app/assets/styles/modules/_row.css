@@ -2,7 +2,11 @@
 	@mixin clearfix;
 	
 	&--gutters {
-		margin-right: -35px;
+		margin-right: 0;
+		
+		@mixin atMedium {
+			margin-right: -35px;
+		}
 		
 		@mixin atLarge {
 			margin-right: -65px;
@@ -10,7 +14,11 @@
 	}
 	
 	&--gutters > div {
-		padding-right: 35px;
+		padding-right: 0;
+		
+		@mixin atMedium {
+			padding-right: 35px;
+		}
 		
 		@mixin atLarge {
 			padding-right: 65px;
@@ -52,6 +60,11 @@
 			width: 33.33%;
 		}
 		
+		&__medium-6 {
+			float: left;
+			width: 50%;
+		}
+		
 		&__medium-8 {
 			float: left;
 			width: 66.66%;
@@ -59,15 +72,26 @@
 	}
 	
 	@mixin atLarge {
+		&__large-3 {
+			float: left;
+			width: 25%;
+			padding: 25px;
+		}
+		
+		&__large-4 {
+			float: left;
+			width: 33.33%;
+		}
+		
+		
 		&__large-6 {
 			float: left;
 			width: 50%;
 		} 
 		
-		&__large-3 {
+		&__large-8 {
 			float: left;
-			width: 25%;
-			padding: 25px;
+			width: 66.66%;
 		}
 		
 		&__hidden-at-medium {

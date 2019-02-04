@@ -1,11 +1,7 @@
 .sustainability {
 	
-	p {
-		color: #fff;
-	}
-	
-	p a {
-		color: $darkBlue;
+	&--border {
+		border-top: 2px solid #fff;
 	}
 	
 	&__green {
