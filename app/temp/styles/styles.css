@@ -510,18 +510,7 @@ img {
 
 .row--gutters > div {
 		padding-right: 0;
-<<<<<<< HEAD
 		
-	}
-
-@media (min-width: 800px) {
-
-.row--gutters > div {
-			padding-right: 35px
-=======
->>>>>>> subscribe
-		
-	}
 	}
 
 @media (min-width: 800px) {
@@ -891,8 +880,6 @@ img {
 
 .icon__social-icon {
 		margin: 20px 10px;
-<<<<<<< HEAD
-=======
 	}
 
 .subscribe__title {
@@ -983,5 +970,18 @@ img {
 
 .google-map iframe {
 		width: 100%;
->>>>>>> subscribe
+	}
+
+.footer {
+	background-color: #8594aa;
+	text-align: center;
+	color: #fff;
+	margin: 0;
+	padding: 1rem 18px;
+	line-height: 1.5;
+}
+
+.footer a {
+		color: #413f4c;
+		text-decoration: none;
 	}
