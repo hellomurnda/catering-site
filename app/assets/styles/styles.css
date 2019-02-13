@@ -11,9 +11,10 @@
 @import "modules/_section-title";
 @import "modules/_generic-content-container";
 @import "modules/_sustainability";
-@import "modules/_icon";
+@import "modules/_icons";
 @import "modules/_subscribe";
 @import "modules/_google-map";
 @import "modules/_footer";
 @import "modules/_site-header";
 @import "modules/_primary-nav";
+@import "modules/_sprite";

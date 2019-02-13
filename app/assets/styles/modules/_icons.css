@@ -1,9 +1,10 @@
-.icon {
+.icons {
 	
 	&__certified {
 		text-align: center;
-		margin: 35px;
+		padding: 35px;
 		transform: scale(.65);
+		max-width: 325px;
 
 		@mixin atSmall {
 			transform: scale(.80);
@@ -24,7 +25,12 @@
 		}
 	}
 	
+	&__social img {
+		width: 50px;
+	}
+	
 	&__social-icon {
+		max-width: 60px;
 		margin: 20px 10px;
 	}
 }

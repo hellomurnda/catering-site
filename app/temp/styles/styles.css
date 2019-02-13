@@ -857,22 +857,23 @@ img {
 		padding-bottom: 50px;
 	}
 
-.icon__certified {
+.icons__certified {
 		text-align: center;
-		margin: 35px;
+		padding: 35px;
 		-webkit-transform: scale(.65);
 		        transform: scale(.65);
+		max-width: 325px;
 	}
 
 @media (min-width: 640px) {
 
-.icon__certified {
+.icons__certified {
 			-webkit-transform: scale(.80);
 			        transform: scale(.80)
 	}
 	}
 
-.icon__social {
+.icons__social {
 		max-width: 60rem;
 		display: flex;
 		flex-wrap: wrap;
@@ -885,13 +886,18 @@ img {
 
 @media (min-width: 800px) {
 
-.icon__social {
+.icons__social {
 			-webkit-transform: scale(1);
 			        transform: scale(1)
 	}
 	}
 
-.icon__social-icon {
+.icons__social img {
+		width: 50px;
+	}
+
+.icons__social-icon {
+		max-width: 60px;
 		margin: 20px 10px;
 	}
 
@@ -1016,6 +1022,7 @@ img {
 		position: absolute;
 		background-color: #413f4c;
 		padding: 1.1875rem 3.625rem;
+		max-width: 440px;
 	}
 
 .primary-nav--pull-right {
@@ -1046,3 +1053,58 @@ img {
 		display: inline-block;
 		padding: 14px 0;
 	}
+
+/*Do not edit modules/_sprite directly, as it is generated automatically by Gulp.
+Instead edit gulp/templates/sprite*/
+
+.icon {
+	background-image: url('../../assets/images/sprites/sprite-ee4ea14d.svg');
+}
+
+.icon--SS-LogoWhite {
+	width: 324px;
+	height: 75px;
+	background-position: 0 0;
+}
+
+.icon--facebook {
+	width: 50px;
+	height: 50px;
+	background-position: 76.82% 95.05703422053232%;
+}
+
+.icon--green-restaurant-certified-logo {
+	width: 226px;
+	height: 250px;
+	background-position: 100% 0;
+}
+
+.icon--green-seal-certified-logo {
+	width: 255px;
+	height: 238px;
+	background-position: 0 100%;
+}
+
+.icon--instagram {
+	width: 50px;
+	height: 50px;
+	background-position: 86.82% 95.05703422053232%;
+}
+
+.icon--linkedin {
+	width: 50px;
+	height: 50px;
+	background-position: 96.82% 95.05703422053232%;
+}
+
+.icon--pinterest {
+	width: 50px;
+	height: 50px;
+	background-position: 51% 28.517110266159698%;
+}
+
+.icon--twitter {
+	width: 60.1px;
+	height: 50px;
+	background-position: 66.13594611145132% 95.05703422053232%;
+}
