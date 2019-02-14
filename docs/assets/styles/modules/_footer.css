@@ -1,0 +1,14 @@
+.footer {
+	background-color: $blueGray;
+	text-align: center;
+	color: #fff;
+	margin: 0;
+	padding: 1rem 18px;
+	line-height: 1.5;
+	
+	a {
+		color: $darkBlue;
+		text-decoration: none;
+	}
+}
+

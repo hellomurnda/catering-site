@@ -1,0 +1,38 @@
+.btn {
+	background-color: $carrotOrange;
+	color: #fff;
+	text-decoration: none;
+	font-size: .9rem;
+	padding: 1.2rem 2.125rem;
+	transition: background-color .5s ease-out;
+	display: inline-block;
+	
+	@mixin atMedium {
+		font-size: 1.2rem;
+	}
+	
+	&:hover {
+		background-color: $darkOrange;
+	}
+	
+	&--service {
+		width: 100%;
+		text-align: center;
+		margin-top: 10px;
+	}
+	
+	&--t-margin {
+		margin-top: .5rem;
+		margin-bottom: .5rem;
+		
+		@mixin atMedium {
+			margin-top: 1.5rem;	
+		}
+	}
+	
+	&--small {
+		padding: .9rem 2rem;
+		font-size: 1rem;
+	}
+}
+
