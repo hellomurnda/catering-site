@@ -3,7 +3,10 @@
 	position: absolute;
 	width: 100%;
 	z-index: 2;
-	background-color: rgba($blueGray, .85);
+	
+	@mixin atMedium {
+		background-color: rgba($blueGray, .85);
+	}
 	
 	&__btn-container {
 		float: right;
@@ -13,7 +16,42 @@
 		top: 0;
 		position: absolute;
 		background-color: $darkBlue;
-		padding: 1.1875rem 3.625rem;
-		max-width: 440px;
+		transform: translateX(-50%);
+		padding: 1rem 2.75rem;
+		left: 50%;
+		max-width: 300px;
+		
+		@mixin atMedium {
+			padding: 1.5rem 3.625rem;
+			max-width: 440px;
+			left: auto;
+			transform: translateX(0);
+		}
+	}
+	
+	&__name {
+		text-indent: -9999px;
+		top: 0;
+	}
+	
+	&__menu-icon {
+		width: 20px;
+		height: 20px;
+		background-color: #FFF;
+		position: absolute;
+		top: 10px;
+		right: 10px;
+		
+		@mixin atMedium {
+			display: none;
+		}
+	}
+	
+	&__menu-content {
+		display: none;
+		
+		@mixin atMedium {
+			display: block;
+		}
 	}
 }

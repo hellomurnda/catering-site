@@ -9,14 +9,14 @@
 		padding-top: 120px;
 		position: absolute;
 		top: 28%;
-		transform: translateY(-50%);
+		transform: translateY(-25%);
 		left: 0;
 		width: 100%;
 		text-align: center;
 		padding-left: 18px;
 		padding-right: 18px;
 		
-		@mixin atSmall {
+		@mixin atMedium {
 			text-align: left;
 		}
 		
@@ -40,13 +40,13 @@
 			max-width: 26rem;
 		}
 		
-		@mixin atSmall {
+		@mixin atMedium {
 			margin: 0;
 			font-size: 3rem;
-			max-width: 23rem;
+			max-width: 28rem;
 		}
 		
-		@mixin atMedium {
+		@mixin atLarge {
 			font-size: 4rem;
 			max-width: 41.25rem;
 		}
