@@ -12,13 +12,17 @@
 	}
 	
 	&__social {
-		max-width: 60rem;
+		max-width: 11rem;
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: space-around;
 		margin-left: auto;
 		margin-right: auto;
 		transform: scale(.75);
+		
+		@mixin atSmall {
+			max-width: 60rem;
+		}
 		
 		@mixin atMedium {
 			transform: scale(1);

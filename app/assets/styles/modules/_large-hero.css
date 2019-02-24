@@ -6,7 +6,7 @@
 	}
 	
 	&__text-content {
-		padding-top: 120px;
+		padding-top: 80px;
 		position: absolute;
 		top: 28%;
 		transform: translateY(-25%);
@@ -17,6 +17,7 @@
 		padding-right: 18px;
 		
 		@mixin atMedium {
+			padding-top: 120px;
 			text-align: left;
 		}
 		
