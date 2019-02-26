@@ -9,6 +9,7 @@
 	<meta name="description" content="Local, organic food catered to your event.">
 	<link rel="shortcut icon" href="favicon.png" type="image/png">
 	<link rel="stylesheet" type="text/css" href="temp/styles/styles.css">
+	<script src="/temp/scripts/Vendor.js"></script>
 </head>
 
 <body>
@@ -35,7 +36,7 @@
 			</div>
 		</div>
 	</header>
-	
+
 	<div class="large-hero">
 		<picture>
 			<source srcset="assets/images/hero--large.jpg 1920w, assets/images/hero--large-hi-dpi.jpg 3840w" media="(min-width:1400px)">
@@ -48,14 +49,14 @@
 			<p><a href="#contact" class="btn">REQUEST A FREE QUOTE!</a></p>
 		</div>
 	</div>
-	
-	<div id="our-services" class="page-section page-section--vegetables">
+
+	<div id="our-services" class="page-section page-section--vegetables lazyload">
 		<div class="wrapper">
 			<div class="row row--gutters">
 				<div class="row__medium-4">
 					<div class="service">
 						<div class="service__photo">
-							<img src="assets/images/wedding-table-setting.jpg" alt="Wedding table setting." class="service__image">
+							<img class="lazyload" data-src="assets/images/wedding-table-setting.jpg" alt="Wedding table setting." class="service__image">
 						</div>
 						<div class="service__text-content">
 							<h3 class="service__title">Weddings</h3>
@@ -67,7 +68,7 @@
 				<div class="row__medium-4">
 					<div class="service">
 						<div class="service__photo">
-							<img src="assets/images/platter-of-kebabs.jpg" alt="Platter of kebabs." class="service__image">
+							<img class="lazyload" data-src="assets/images/platter-of-kebabs.jpg" alt="Platter of kebabs." class="service__image">
 						</div>
 						<div class="service__text-content">
 							<h3 class="service__title">Social</h3>
@@ -79,7 +80,7 @@
 				<div class="row__medium-4">
 					<div class="service service--no-b-margin">
 						<div class="service__photo">
-							<img src="assets/images/person-mixing-salad.jpg" alt="Person mixing salad."  class="service__image">
+							<img class="lazyload" data-src="assets/images/person-mixing-salad.jpg" alt="Person mixing salad."  class="service__image">
 						</div>
 						<div class="service__text-content">
 							<h3 class="service__title">Corporate</h3>
@@ -88,7 +89,7 @@
 						<a class="btn btn--service" href="#corporate">LEARN MORE</a>
 					</div>
 				</div>
-			</div>	
+			</div>
 		</div>
 	</div>
 	<div id="flavors-influenced" class="page-section">
@@ -105,16 +106,16 @@
 				</div>
 				<div class="row__large-6 row__medium-4">
 					<picture>
-						<source srcset="assets/images/table-of-assorted-foods--large.jpg 900w, assets/images/table-of-assorted-foods--large-hi-dpi.jpg 1800w" media="(min-width: 1400px)">
-						<source srcset="assets/images/table-of-assorted-foods--medium-large.jpg 500w, assets/images/table-of-assorted-foods--medium-large-hi-dpi.jpg 1000w" media="(min-width: 1000px)">
-						<source srcset="assets/images/table-of-assorted-foods--medium.jpg 300w, assets/images/table-of-assorted-foods--medium-hi-dpi.jpg 600w" media="(min-width: 800px)">
-						<img class="row__photo" srcset="assets/images/table-of-assorted-foods--smaller.jpg 800w, assets/images/table-of-assorted-foods--smaller-hi-dpi.jpg 1600w">
+						<source data-srcset="assets/images/table-of-assorted-foods--large.jpg 900w, assets/images/table-of-assorted-foods--large-hi-dpi.jpg 1800w" media="(min-width: 1400px)">
+						<source data-srcset="assets/images/table-of-assorted-foods--medium-large.jpg 500w, assets/images/table-of-assorted-foods--medium-large-hi-dpi.jpg 1000w" media="(min-width: 1000px)">
+						<source data-srcset="assets/images/table-of-assorted-foods--medium.jpg 300w, assets/images/table-of-assorted-foods--medium-hi-dpi.jpg 600w" media="(min-width: 800px)">
+						<img class="row__photo lazyload" data-srcset="assets/images/table-of-assorted-foods--smaller.jpg 800w, assets/images/table-of-assorted-foods--smaller-hi-dpi.jpg 1600w">
 					</picture>
 				</div>
 			</div>
 		</div>
 	</div>
-	<div id="sustainability-matters" class="page-section page-section--sustainability sustainability">
+	<div id="sustainability-matters" class="page-section page-section--sustainability lazyload sustainability">
 		<div class="sustainability__green">
 			<div class="wrapper">
 				<div class="row row--gutters row--no-gutters-at-medium">
@@ -125,22 +126,22 @@
 						</div>
 					</div>
 					<div class="row__large-3 row__hidden-at-medium">
-						<img src="assets/images/icons/green-seal-certified-logo.svg">
+						<img class="lazyload" data-src="assets/images/icons/green-seal-certified-logo.svg">
 					</div>
 					<div class="row__large-3 row__hidden-at-medium">
-						<img src="assets/images/icons/green-restaurant-certified-logo.svg">
+						<img class="lazyload" data-src="assets/images/icons/green-restaurant-certified-logo.svg">
 					</div>
 					<div class="row__hidden-at-large row__icons">
 						<div class="sustainability--border">
-							<img class="icons__certified" src="assets/images/icons/green-seal-certified-logo.svg">
-							<img class="icons__certified" src="assets/images/icons/green-restaurant-certified-logo.svg">
+							<img class="icons__certified lazyload" data-src="assets/images/icons/green-seal-certified-logo.svg">
+							<img class="icons__certified lazyload" data-src="assets/images/icons/green-restaurant-certified-logo.svg">
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-	<div id="subscribe" class="page-section page-section--vegetables subscribe">
+	<div id="subscribe" class="page-section page-section--vegetables subscribe lazyload">
 		<div class="wrapper">
 			<div class="row row--gutters">
 				<div class="row__large-4  subscribe__border">
@@ -153,16 +154,16 @@
 						<input type="submit" value="SIGN ME UP!">
 					</form>
 					<div class="icons__social">
-						<a href="#"><img class="icons__social-icon" src="assets/images/icons/facebook.svg"></a>
-						<a href="#"><img class="icons__social-icon" src="assets/images/icons/instagram.svg"></a>
-						<a href="#"><img class="icons__social-icon" src="assets/images/icons/twitter.svg"></a>
-						<a href="#"><img class="icons__social-icon" src="assets/images/icons/pinterest.svg"></a>
-						<a href="#"><img class="icons__social-icon" src="assets/images/icons/linkedin.svg"></a>
+						<a href="#"><img class="icons__social-icon lazyload" data-src="assets/images/icons/facebook.svg"></a>
+						<a href="#"><img class="icons__social-icon lazyload" data-src="assets/images/icons/instagram.svg"></a>
+						<a href="#"><img class="icons__social-icon lazyload" data-src="assets/images/icons/twitter.svg"></a>
+						<a href="#"><img class="icons__social-icon lazyload" data-src="assets/images/icons/pinterest.svg"></a>
+						<a href="#"><img class="icons__social-icon lazyload" data-src="assets/images/icons/linkedin.svg"></a>
 					</div>
 				</div>
 				<div class="row__large-8 subscribe--l-padding">
 					<div class="google-map">
-						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d44736.14304822503!2d-122.69971198065814!3d45.509898647668074!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54950b0b7da97427%3A0x1c36b9e6f6d18591!2sPortland%2C+OR!5e0!3m2!1sen!2sus!4v1549231107296" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+						<iframe class="lazyload" data-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d44736.14304822503!2d-122.69971198065814!3d45.509898647668074!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54950b0b7da97427%3A0x1c36b9e6f6d18591!2sPortland%2C+OR!5e0!3m2!1sen!2sus!4v1549231107296" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
 					</div>
 					<div class="generic-content-container generic-content-container--p-white generic-content-container--a-white">
 						<div class="row__medium-6">
