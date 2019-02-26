@@ -1308,3 +1308,12 @@ Instead edit gulp/templates/sprite*/
 	height: 50px;
 	background-position: 66.13594611145132% 95.05703422053232%;
 }
+
+.reveal-item {
+  opacity: 0;
+  transition: opacity 1.5s ease-out;
+}
+
+.reveal-item--is-visible {
+    opacity: 1;
+  }
