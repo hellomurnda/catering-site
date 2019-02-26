@@ -8,16 +8,16 @@
 	display: inline-block;
 	box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, .2);
 	border-radius: 5px;
-	
+
 	@mixin atMedium {
 		font-size: 1.2rem;
 		padding: 1.2rem 2.125rem;
 	}
-	
+
 	&:hover {
 		background-color: $darkOrange;
 	}
-	
+
 	&--service {
 		width: 100%;
 		text-align: center;
@@ -25,26 +25,31 @@
 		border-top-left-radius: 0;
 		border-top-right-radius: 0;
 	}
-	
+
 	&--t-margin {
 		margin-top: .5rem;
 		margin-bottom: .5rem;
-		
+
 		@mixin atMedium {
-			margin-top: 1.5rem;	
+			margin-top: 1.5rem;
 		}
 	}
-	
+
 	&--small {
 		background-color: $darkBlue;
 		padding: .9rem 2rem;
-		font-size: .9rem;
+		font-size: 1.25rem;
 		box-shadow: 0 0 0 0 transparent;
 		letter-spacing: 1px;
-		
+		margin-bottom: 10px;
+
+		&:hover {
+			background-color: rgba(90, 87, 104);
+		}
+
 		@mixin atMedium {
 			font-size: 1rem;
+			margin-bottom: 0;
 		}
 	}
 }
-

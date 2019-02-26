@@ -3,14 +3,20 @@
 	position: absolute;
 	width: 100%;
 	z-index: 2;
-	transition: background-color .3s ease-out;
+	transition: all .3s ease-out;
 
 	&--is-expanded {
 		background-color: rgba($blueGray, .95);
 	}
 
 	@mixin atMedium {
+		position: fixed;
 		background-color: rgba($blueGray, .85);
+
+		&--dark {
+			padding: .5rem 0;
+			background-color: rgba(66, 73, 84, .85);
+		}
 	}
 
 	&__btn-container {
@@ -36,6 +42,14 @@
 			transform: translateX(0);
 			border-bottom-left-radius: 0px;
 			border-bottom-right-radius: 0px;
+			transform-origin: top;
+			transition: all .3s ease-out;
+
+			.site-header--dark & {
+				transform: scale(.51);
+				border-bottom-left-radius: 0px;
+				border-bottom-right-radius: 0px;
+			}
 		}
 
 		@mixin atMediumLarge {
@@ -46,17 +60,12 @@
 		}
 	}
 
-	&__name {
-		text-indent: -9999px;
-		top: 0;
-	}
-
 	&__menu-icon {
-		width: 20px;
+		width: 25px;
 		height: 19px;
 		position: absolute;
-		top: 10px;
-		left: 10px;
+		top: 15px;
+		left: 15px;
 		z-index: 10;
 
 		&::before {
@@ -75,7 +84,7 @@
 			position: absolute;
 			top: 8px;
 			left: 0;
-			width: 20px;
+			width: 25px;
 			height: 3px;
 			background-color: $darkBlue;
 			transform: all .3s ease-out;
@@ -119,6 +128,7 @@
 		z-index: -10;
 		position: relative;
 		padding-top: 80px;
+		padding-bottom: 100px;
 		text-align: center;
 		transition: all .3s ease-out;
 
@@ -126,12 +136,13 @@
 			opacity: 1;
 			z-index: 1;
 			padding-top: 0;
+			padding-bottom: 0;
 		}
 
 		&--is-visible {
 			opacity: 1;
 			z-index: 1;
-			padding-top: 100px;
+			padding-top: 150px;
 		}
 	}
 }
