@@ -11,14 +11,14 @@
 
 	&--vegetables {
 		&.lazyloaded {
-			background: url('/assets/images/vegetable-pattern-bg.jpg') top center no-repeat;
+			background: url('../../assets/images/vegetable-pattern-bg.jpg') top center no-repeat;
 			background-size: cover;
 		}
 	}
 
 	&--sustainability {
 		&.lazyloaded {
-			background: url('/assets/images/sustainability-bg.jpg') center no-repeat;
+			background: url('../../assets/images/sustainability-bg.jpg') center no-repeat;
 			background-size: cover;
 		}
 	}
