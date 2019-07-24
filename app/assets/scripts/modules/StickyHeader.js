@@ -5,7 +5,7 @@ class StickyHeader {
   constructor() {
     this.lazyImages = $(".lazyload");
     this.siteHeader = $(".site-header");
-    this.headerTriggerElement = $(".large-hero__title");
+    this.headerTriggerElement = $(".large-hero__title, .banner__title");
     this.createHeaderWaypoint();
     this.refreshWaypoints();
   }

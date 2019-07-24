@@ -2,38 +2,38 @@
 	p {
 		line-height: 2;
 		margin-top: .5rem;
-		
+
 		@mixin atSmall {
 			font-size: 1.125rem;
 		}
-		
+
 		@mixin atMedium {
-			
+			max-width: 100%;
 		}
-		
-		@mixin atMediumLarge {
+
+		@mixin atLarge {
 			max-width: 42.625rem;
 		}
 	}
-	
+
 	p a {
 		text-decoration: none;
 		color: $carrotOrange;
 	}
-	
+
 	&--p-white p {
 		color: #fff;
 	}
-	
-	&--p-white p a {
+
+	&--a-blue p a {
 		color: $darkBlue;
 	}
-	
+
 	&--a-white p a {
 		text-decoration: none;
 		color: #fff;
 	}
-	
+
 	&--center-at-medium p {
 
 		@mixin atMedium {

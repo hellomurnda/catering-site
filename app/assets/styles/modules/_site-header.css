@@ -67,6 +67,7 @@
 		top: 15px;
 		left: 15px;
 		z-index: 10;
+		cursor: pointer;
 
 		&::before {
 			content: "";

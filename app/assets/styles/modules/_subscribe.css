@@ -1,5 +1,5 @@
 .subscribe {
-	
+
 	&__title {
 		font-family: mrs-eaves-xl-serif-narrow, serif;
 		font-size: 1.75rem;
@@ -9,54 +9,72 @@
 		padding-bottom: 0;
 		margin-bottom: 0;
 	}
-	
+
 	&__border {
 		border-right: none;
-		
+
 		@mixin atLarge {
-			border-right: 2px solid #fff; 
+			border-right: 2px solid #fff;
 		}
 	}
-	
+
 	&--l-padding {
 		padding-left: 0;
-		
+
 		@mixin atLarge {
 			padding-left: 65px;
 		}
 	}
-	
+
 	&__form {
 		max-width: 60rem;
 		width: 100%;
 		margin: 50px 0 34px 0;
-		
+		border-radius: 5px;
+		overflow: hidden;
+
 		@mixin atMedium {
 			margin: 34px auto;
 		}
 	}
-	
+
 	&__form input{
 		width: 100%;
 		padding: 16px 30px;
 	}
-	
+
 	&__form input[type=text] {
-		color: $blueGray;
 		border: none;
+		transition: all .3s ease-out;
 	}
-	
+
+	::placeholder {
+		color: $blueGray;
+	}
+
 	&__form input[type=text]:focus {
+		color: $darkBlue;
 		outline-width: 0;
 		border: none;
+		box-shadow: inset 0 0 5px $darkBlue;
 	}
-	
+
+	&__form input:focus::placeholder {
+		color: transparent;
+	}
+
 	&__form input[type=submit] {
 		background-color: $carrotOrange;
 		outline-width: 0;
 		border: none;
 		color: #fff;
 		cursor: pointer;
+		letter-spacing: .1rem;
+		font-weight: bold;
+		transition: background-color .5s ease-out;
+
+		&:hover {
+			background-color: $darkOrange;
+		}
 	}
 }
-

@@ -1,35 +1,68 @@
 .row {
 	@mixin clearfix;
-	
+
 	&--gutters {
 		margin-right: 0;
-		
+
 		@mixin atMedium {
 			margin-right: -35px;
 		}
-		
+
 		@mixin atLarge {
 			margin-right: -65px;
 		}
 	}
-	
+
 	&--gutters > div {
 		padding-right: 0;
-		
+
 		@mixin atMedium {
 			padding-right: 35px;
 		}
-		
+
 		@mixin atLarge {
 			padding-right: 65px;
 		}
-		
+
 	}
-	
+
+	&--gutters-small {
+		margin-right: 0;
+
+		@mixin atMedium {
+			margin-right: -35px;
+		}
+
+		@mixin atLarge {
+			margin-right: -35px;
+		}
+	}
+
+	&--gutters-small > div {
+		padding-right: 0;
+
+		@mixin atMedium {
+			padding-right: 35px;
+		}
+
+		@mixin atLarge {
+			padding-right: 35px;
+		}
+
+	}
+
 	&--gutters--no-r-padding > div:last-child {
 		padding-right: 0;
 	}
-	
+
+	&--padding-t {
+			padding-top: 0;
+
+		@mixin atLarge {
+			padding-top: 35px;
+		}
+	}
+
 	&__photo {
 		padding-top: 25px;
 		postion: absolute;
@@ -37,72 +70,93 @@
 		left: 0;
 		min-height: 100%;
 	}
-	
+
 	&__hidden-at-medium {
 			display: none;
 	}
-	
+
 	&__hidden-at-large {
 		display: block;
 		text-align: center;
 		margin-right: auto;
 		margin-left: auto;
 	}
-	
+
 	@mixin atMedium {
+		&__medium-3 {
+			float: left;
+			width: 25%;
+		}
+
 		&__medium-4 {
 			float: left;
 			width: 33.33%;
 		}
-		
+
 		&__medium-4-image {
 			float: left;
 			width: 33.33%;
 		}
-		
+
 		&__medium-6 {
 			float: left;
 			width: 50%;
 		}
-		
+
 		&__medium-8 {
 			float: left;
 			width: 66.66%;
 		}
+
+		&__medium-12 {
+			float: left;
+			width: 100%;
+		}
 	}
-	
+
+	@mixin atMediumLarge {
+		&__mediumLarge-6 {
+			float: left;
+			width: 50%;
+		}
+
+		&__mediumLarge-12 {
+			float: left;
+			width: 100%;
+		}
+	}
+
 	@mixin atLarge {
 		&__large-3 {
 			float: left;
 			width: 25%;
 			padding: 25px;
 		}
-		
+
 		&__large-4 {
 			float: left;
 			width: 33.33%;
 		}
-		
-		
+
+
 		&__large-6 {
 			float: left;
 			width: 50%;
-		} 
-		
+		}
+
 		&__large-8 {
 			float: left;
 			width: 66.66%;
 		}
-		
+
 		&__hidden-at-medium {
 			display: block;
 		}
-		
+
 		&__hidden-at-large {
 			display: none;
 		}
 	}
-	
-		
-}
 
+
+}
