@@ -1,5 +1,5 @@
 .icons {
-	
+
 	&__certified {
 		text-align: center;
 		padding: 35px;
@@ -10,7 +10,7 @@
 			transform: scale(.80);
 		}
 	}
-	
+
 	&__social {
 		max-width: 11rem;
 		display: flex;
@@ -19,23 +19,29 @@
 		margin-left: auto;
 		margin-right: auto;
 		transform: scale(.75);
-		
+
 		@mixin atSmall {
 			max-width: 60rem;
 		}
-		
+
 		@mixin atMedium {
 			transform: scale(1);
 		}
 	}
-	
+
 	&__social img {
 		width: 50px;
 	}
-	
+
 	&__social-icon {
 		max-width: 60px;
 		margin: 20px 10px;
 	}
-}
 
+	&__footer {
+		width: 60px;
+		margin-left: 10px;
+		margin-right: 10px;
+		margin-top: 1rem;
+	}
+}

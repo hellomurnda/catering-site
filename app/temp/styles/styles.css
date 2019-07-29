@@ -501,8 +501,16 @@ img {
 	}
 
 .btn--large {
-		font-size: 1.1rem;
-		padding: 1.15rem 2.125rem;
+		font-size: .9rem;
+		padding: 1rem 2.125rem;
+	}
+
+@media (min-width: 860px) {
+
+.btn--large {
+			font-size: 1.1rem;
+			padding: 1.15rem 2.125rem
+	}
 	}
 
 .btn--small {
@@ -696,6 +704,11 @@ img {
 	}
 
 @media (min-width: 1000px) {
+		.row__mediumLarge-4 {
+			float: left;
+			width: 33.33%;
+		}
+
 		.row__mediumLarge-6 {
 			float: left;
 			width: 50%;
@@ -865,7 +878,9 @@ img {
 
 		.section-title--center-at-medium {
 			text-align: center;
-			max-width: 100%;
+			max-width: 50rem;
+			margin-left: auto;
+			margin-right: auto;
 		}
 	}
 
@@ -884,9 +899,9 @@ img {
 	}
 
 .section-title__rule {
-		border-bottom: 5px solid #413f4c;
+		border-bottom: 3px solid #413f4c;
 		border-style: solid;
-		max-width: 10rem;
+		max-width: 8rem;
 		margin-left: 0;
 		padding-top:0;
 		margin-bottom: 1.25rem;
@@ -895,16 +910,34 @@ img {
 @media (min-width: 640px) {
 
 .section-title__rule {
-			border-bottom: 7px solid #413f4c
+			border-bottom: 5px solid #413f4c;
+			max-width: 10rem
 	}
 	}
 
 @media (min-width: 860px) {
 
 .section-title__rule {
-			border-bottom: 10px solid #413f4c;
-			margin-bottom: 3rem
+			margin-bottom: 3rem;
+			max-width: 15rem
 	}
+	}
+
+@media (min-width: 860px) {
+
+.section-title__rule--center {
+				margin-left:auto;
+				margin-right: auto;
+				margin-bottom: 5rem
+		}
+	}
+
+@media (min-width: 1400px) {
+
+.section-title__rule--center {
+				margin-left: 0;
+				margin-bottom: 3rem
+		}
 	}
 
 .generic-content-container p {
@@ -936,6 +969,20 @@ img {
 .generic-content-container p a {
 		text-decoration: none;
 		color: #e18826;
+	}
+
+.generic-content-container h3 {
+		margin-top: 1.75rem;
+		margin-bottom: 0;
+		line-height: .75;
+		font-size: 1rem;
+	}
+
+@media (min-width: 860px) {
+
+.generic-content-container h3 {
+			font-size: 1.15rem
+	}
 	}
 
 .generic-content-container--p-white p {
@@ -1037,14 +1084,16 @@ img {
 		margin: 20px 10px;
 	}
 
-.subscribe__title {
-		font-family: mrs-eaves-xl-serif-narrow, serif;
-		font-size: 1.75rem;
-		font-weight: 700;
-		color: #fff;
+.icons__footer {
+		width: 60px;
+		margin-left: 10px;
+		margin-right: 10px;
 		margin-top: 1rem;
+	}
+
+.subscribe__title {
+		color: #fff;
 		padding-bottom: 0;
-		margin-bottom: 0;
 	}
 
 .subscribe__border {
@@ -1155,7 +1204,7 @@ img {
 	padding-top: 3.25rem;
 	margin-top: 2.5rem;
 	border-top: 2px solid #fff;
-	border-radius: 5px;
+	border-radius: 0px 0px 5px 5px;
 }
 
 @media (min-width: 1400px) {
@@ -1169,19 +1218,30 @@ img {
 
 .google-map iframe {
 		width: 100%;
+		border-radius: 5px;
 	}
 
 .footer {
-	background-color: #8594aa;
+	background-color: #35343a;
 	text-align: center;
 	color: #fff;
 	margin: 0;
-	padding: 1rem 18px;
+	padding-top: 2rem;
+	padding-bottom: 2rem;
 	line-height: 1.5;
+	font-size: .8rem;
+	border-bottom: 7px solid #e18826;
 }
 
+@media (min-width: 860px) {
+
+.footer {
+		text-align: left
+}
+	}
+
 .footer a {
-		color: #413f4c;
+		color: #9cbc65;
 		text-decoration: none;
 	}
 
@@ -1238,14 +1298,14 @@ img {
 			        transform: translateX(0);
 			border-bottom-left-radius: 0px;
 			border-bottom-right-radius: 0px;
-			-webkit-transform-origin: top;
-			        transform-origin: top;
+			-webkit-transform-origin: 0 0;
+			        transform-origin: 0 0;
 			transition: all .3s ease-out
 	}
 
 			.site-header--dark .site-header__logo {
-				-webkit-transform: scale(.51);
-				        transform: scale(.51);
+				-webkit-transform: scale(.54);
+				        transform: scale(.54);
 				border-bottom-left-radius: 0px;
 				border-bottom-right-radius: 0px;
 			}
@@ -1255,7 +1315,7 @@ img {
 
 .site-header__logo {
 			padding: 1.5rem 3.625rem;
-			max-width: 440px;
+			max-width: 400px;
 			border-bottom-left-radius: 5px;
 			border-bottom-right-radius: 5px
 	}
@@ -1418,16 +1478,13 @@ img {
 .primary-nav a:before {
 			content: "";
 			position: absolute;
-			width: 100%;
+			width: 35px;
 			height: 2px;
 			bottom: 0;
-			left: 0;
 			background-color: #fff;
 			visibility: hidden;
 			-webkit-transform: scaleX(0);
 			        transform: scaleX(0);
-			-webkit-transform-origin: left;
-			        transform-origin: left;
 			transition: all .3s ease-out;
 		}
 
@@ -1634,6 +1691,10 @@ Instead edit gulp/templates/sprite*/
         top: 0;
         padding: 8px 25px;
       }
+
+      .info-slide__description--narrow {
+        top: 85%;
+      }
 	}
 
 .info-slide__description p {
@@ -1652,8 +1713,16 @@ Instead edit gulp/templates/sprite*/
       letter-spacing: 0.15rem;
       line-height: 1;
       text-transform: uppercase;
-      font-size: 1rem;
+      font-size: .95rem;
+      margin-top: 1em;
     }
+
+@media (min-width: 640px) {
+
+.info-slide h3 {
+        font-size: 1rem
+    }
+	}
 
 @media (min-width: 1400px) {
 

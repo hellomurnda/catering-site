@@ -32,6 +32,10 @@
         top: 0;
         padding: 8px 25px;
       }
+
+      &--narrow {
+        top: 85%;
+      }
     }
 
     & p {
@@ -48,7 +52,12 @@
       letter-spacing: 0.15rem;
       line-height: 1;
       text-transform: uppercase;
-      font-size: 1rem;
+      font-size: .95rem;
+      margin-top: 1em;
+
+      @mixin atSmall {
+        font-size: 1rem;
+      }
 
       @mixin atLarge {
         color: #fff;
@@ -61,7 +70,7 @@
 
   .fa {
     display: none;
-    
+
     @mixin atLarge {
       display: inline-block;
       font-size: 1.25rem;

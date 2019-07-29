@@ -1,13 +1,8 @@
 .subscribe {
 
 	&__title {
-		font-family: mrs-eaves-xl-serif-narrow, serif;
-		font-size: 1.75rem;
-		font-weight: 700;
 		color: #fff;
-		margin-top: 1rem;
 		padding-bottom: 0;
-		margin-bottom: 0;
 	}
 
 	&__border {

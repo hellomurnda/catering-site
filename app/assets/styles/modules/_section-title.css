@@ -23,7 +23,9 @@
 
 		&--center-at-medium {
 			text-align: center;
-			max-width: 100%;
+			max-width: 50rem;
+			margin-left: auto;
+			margin-right: auto;
 		}
 	}
 
@@ -36,20 +38,34 @@
 	}
 
 	&__rule {
-		border-bottom: 5px solid $darkBlue;
+		border-bottom: 3px solid $darkBlue;
 		border-style: solid;
-		max-width: 10rem;
+		max-width: 8rem;
 		margin-left: 0;
 		padding-top:0;
 		margin-bottom: 1.25rem;
 
 		@mixin atSmall {
-			border-bottom: 7px solid $darkBlue;
+			border-bottom: 5px solid $darkBlue;
+			max-width: 10rem;
 		}
 
 		@mixin atMedium {
-			border-bottom: 10px solid $darkBlue;
 			margin-bottom: 3rem;
+			max-width: 15rem;
+		}
+
+		&--center {
+			@mixin atMedium {
+				margin-left:auto;
+				margin-right: auto;
+				margin-bottom: 5rem;
+			}
+
+			@mixin atLarge {
+				margin-left: 0;
+				margin-bottom: 3rem;
+			}
 		}
 	}
 }

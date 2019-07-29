@@ -115,6 +115,11 @@
 	}
 
 	@mixin atMediumLarge {
+		&__mediumLarge-4 {
+			float: left;
+			width: 33.33%;
+		}
+
 		&__mediumLarge-6 {
 			float: left;
 			width: 50%;

@@ -1,14 +1,20 @@
 .footer {
-	background-color: $blueGray;
+	background-color: $darkerBlue;
 	text-align: center;
 	color: #fff;
 	margin: 0;
-	padding: 1rem 18px;
+	padding-top: 2rem;
+	padding-bottom: 2rem;
 	line-height: 1.5;
-	
+	font-size: .8rem;
+	border-bottom: 7px solid $carrotOrange;
+
+	@mixin atMedium {
+		text-align: left;
+	}
+
 	a {
-		color: $darkBlue;
+		color: $guacGreen;
 		text-decoration: none;
 	}
 }
-
