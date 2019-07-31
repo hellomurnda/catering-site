@@ -32,6 +32,14 @@
 			}
 	}
 
+	h6 {
+		font-style: italic;
+		font-weight: 200;
+		font-size: 1.75rem;
+		line-height: 1.5;
+		margin: 0 0 1.5rem 0;
+	}
+
 	&--p-white p {
 		color: #fff;
 	}
@@ -43,6 +51,12 @@
 	&--a-white p a {
 		text-decoration: none;
 		color: #fff;
+	}
+
+	&--about p {
+		max-width: 100%;
+		margin-left: auto;
+		margin-right: auto;
 	}
 
 	&--center-at-medium p {
@@ -63,5 +77,14 @@
 			margin-bottom: 0;
 			padding-bottom: 0;
 		}
+	}
+
+	h3.center {
+		text-align: center;
+		margin-bottom: 3rem;
+	}
+
+	p.justify {
+		text-align: justify;
 	}
 }

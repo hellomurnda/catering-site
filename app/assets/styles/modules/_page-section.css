@@ -22,4 +22,8 @@
 			background-size: cover;
 		}
 	}
+
+	&--light-gray {
+		background-color: #f3f3f3;
+	}
 }

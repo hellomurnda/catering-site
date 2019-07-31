@@ -63,6 +63,18 @@
 		}
 	}
 
+	&__medium-padding-top {
+		padding-top: 5rem;
+	}
+
+	&__small-padding-top {
+		padding-top: 5rem;
+
+		@mixin atMedium {
+			padding-top: 0;
+		}
+	}
+
 	&__photo {
 		padding-top: 25px;
 		postion: absolute;
