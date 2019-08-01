@@ -654,6 +654,13 @@ img {
 		padding-top: 5rem;
 	}
 
+@media (min-width: 1400px) {
+
+.row__medium-padding-top {
+			padding-top: 0
+	}
+	}
+
 .row__small-padding-top {
 		padding-top: 5rem;
 	}

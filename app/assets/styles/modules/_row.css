@@ -64,6 +64,10 @@
 
 	&__medium-padding-top {
 		padding-top: 5rem;
+
+		@mixin atLarge {
+			padding-top: 0;
+		}
 	}
 
 	&__small-padding-top {
