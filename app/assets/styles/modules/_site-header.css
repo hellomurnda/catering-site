@@ -7,6 +7,8 @@
 
 	&--is-expanded {
 		background-color: rgba($blueGray, .95);
+		height: 100%;
+		padding-top: 60%;
 	}
 
 	@mixin atMedium {
@@ -76,7 +78,7 @@
 			left: 0;
 			width: 20px;
 			height: 3px;
-			background-color: $darkBlue;
+			background-color: #fff;
 			transform-origin: 0 0;
 			transition: transform .3s ease-out;
 		}
@@ -87,7 +89,7 @@
 			left: 0;
 			width: 25px;
 			height: 3px;
-			background-color: $darkBlue;
+			background-color: #fff;
 			transform: all .3s ease-out;
 			transform-origin: 0 50%;
 		}
@@ -99,7 +101,7 @@
 			left: 0;
 			width: 20px;
 			height: 3px;
-			background-color: $darkBlue;
+			background-color: #fff;
 			transform-origin: 0 100%;
 			transition: transform .3s ease-out;
 		}
@@ -128,8 +130,6 @@
 		opacity: 0;
 		z-index: -100;
 		position: relative;
-		padding-top: 100px;
-		padding-bottom: 180px;
 		text-align: center;
 		transition: all .3s ease-out;
 		display: none;
@@ -139,12 +139,12 @@
 			z-index: 1;
 			padding-top: 0;
 			padding-bottom: 0;
+			display: block;
 		}
 
 		&--is-visible {
 			opacity: 1;
 			z-index: 1;
-			padding-top: 180px;
 			display: block;
 		}
 	}

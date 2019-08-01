@@ -2,10 +2,14 @@
 
   & label {
     display:block;
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: 700;
     padding-bottom: 7px;
     margin-top: 30px;
+
+    @mixin atMedium {
+      font-size: 1.2rem;
+    }
   }
 
   .radio-label {
@@ -39,6 +43,10 @@
     width: 100%;
     padding: 16px 16px;
     border-radius: 5px;
+    border: none;
+  }
+
+  input[type=email] {
     border: none;
   }
 
