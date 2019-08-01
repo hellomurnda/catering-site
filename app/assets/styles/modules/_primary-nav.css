@@ -25,6 +25,10 @@
 
 		@mixin atMedium {
 			float: left;
+			padding-right: 1.5rem;
+		}
+
+		@mixin atMediumLarge {
 			padding-right: 3rem;
 		}
 	}
@@ -33,7 +37,7 @@
 		position: relative;
 		color: #fff;
 		text-decoration: none;
-		font-size: 1.5rem;
+		font-size: 1rem;
 		display: inline-block;
 		padding: 20px 0;
 
@@ -55,6 +59,11 @@
 		}
 
 		@mixin atMedium {
+			padding: 15px 0;
+			font-size: .9rem;
+		}
+
+		@mixin atMediumLarge {
 			padding: 14px 0;
 			font-size: 1rem;
 		}

@@ -1,0 +1,116 @@
+.contact {
+
+  & label {
+    display:block;
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding-bottom: 7px;
+    margin-top: 30px;
+  }
+
+  .radio-label {
+    display: inline-block;
+    font-weight:400;
+    font-size: 1rem;
+    margin-top: 15px;
+    padding-bottom: 0;
+    cursor: pointer;
+    padding-left: 7px;
+    padding-right: 35px;
+  }
+
+  .no-margin-t {
+    margin-top: 30px;
+
+    @mixin atMedium {
+      margin-top: 0px;
+    }
+  }
+
+  input{
+    width: 100%;
+    padding: 16px 16px;
+    border-radius: 5px;
+  }
+
+  textarea {
+    height: 150px;
+    resize: none;
+    width: 100%;
+    padding: 16px 16px;
+    border-radius: 5px;
+    border: none;
+  }
+
+  input[type=radio] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    display: inline-block;
+    position: relative;
+    background-color: #FFF;
+    color: #fff;
+    top: 10px;
+    height: 20px;
+    width: 20px;
+    border: 0;
+    cursor: pointer;
+    margin-left: 0;
+    margin-right: 5px;
+    outline: none;
+    transition: all .3s ease-out;
+  }
+
+  input[type=radio]:checked::before {
+    position: absolute;
+    left: 11px;
+    top: 6px;
+    content: '\02143';
+    transform: rotate(40deg);
+  }
+
+    input[type=radio]:hover {
+      background-color: #dde5ed;
+    }
+
+    input[type=radio]:checked {
+      background-color: $guacGreen;
+    }
+
+  input[type=text] {
+    border: none;
+    transition: all .3s ease-out;
+    background-color: #fff;
+  }
+
+  ::placeholder {
+    color: rgba($blueGray, .5);
+  }
+
+  input[type=text]:focus {
+    color: $darkBlue;
+    outline-width: 0;
+    border: none;
+    background-color: #dde5ed;
+  }
+
+  input:focus::placeholder {
+    color: transparent;
+  }
+
+  input[type=submit] {
+    background-color: $carrotOrange;
+    outline-width: 0;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    letter-spacing: .1rem;
+    font-weight: bold;
+    transition: background-color .5s ease-out;
+    margin-top: 30px;
+
+    &:hover {
+      background-color: $darkOrange;
+    }
+  }
+}

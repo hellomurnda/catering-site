@@ -41,6 +41,7 @@
 	&__form input[type=text] {
 		border: none;
 		transition: all .3s ease-out;
+		background-color: #fff;
 	}
 
 	::placeholder {
@@ -51,7 +52,7 @@
 		color: $darkBlue;
 		outline-width: 0;
 		border: none;
-		box-shadow: inset 0 0 5px $darkBlue;
+		background-color: #dde5ed;
 	}
 
 	&__form input:focus::placeholder {
